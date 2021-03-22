@@ -64,6 +64,16 @@ const routes: Routes = [
     loadChildren: () => import('./servicos-user/servicos-user.module').then( m => m.ServicosUserPageModule),
     canActivate : [AngularFireAuthGuard],
     data : { authGuardPipe : redirectToLogin}
+
+    loadChildren: () => import('./servicos-user/servicos-user.module').then( m => m.ServicosUserPageModule)
+  },
+  {
+    path: 'dieta-cetogenica',
+    loadChildren: () => import('./dieta-cetogenica/dieta-cetogenica.module').then( m => m.DietaCetogenicaPageModule)
+  },
+  {
+    path: 'dieta-low-carb',
+    loadChildren: () => import('./dieta-low-carb/dieta-low-carb.module').then( m => m.DietaLowCarbPageModule)
   },
  
   {
