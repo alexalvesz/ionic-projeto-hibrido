@@ -8,10 +8,14 @@
 </ion-header>
 
 <ion-content>
+  
   <form [formGroup]="formGroup">
   <ion-card id="grad">
       <ion-card-content> 
-
+        <div class="ion-text-center">
+          <img src="{{imagem}}" />
+        </div>
+     
 
   <ion-item>
       <ion-label position="floating">Nome do prato</ion-label>
@@ -33,8 +37,11 @@
         <ion-select-option value="hortalicaas">Hortaliças</ion-select-option>
       </ion-select>
     </ion-item>
-  <ion-button expand="block" color="danger" (click)="remover()" fill="outline">Excluir</ion-button>
 </ion-card-content>
+
+
+
+
 </ion-card>
 </form>
 </ion-content> 
